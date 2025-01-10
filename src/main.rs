@@ -35,7 +35,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // * Sending a GET request to the API
     let response = client
         .get(&request_url)
-        .header("USER_AGENT", "Rust Web API CLI")
+        .header("USER_AGENT", "Rust API CLI")
         .send()
         .await?;
 
